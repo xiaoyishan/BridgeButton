@@ -13,8 +13,8 @@
 		848E11AF1FB072550082A9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848E11AE1FB072550082A9AD /* Assets.xcassets */; };
 		848E11B21FB072550082A9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848E11B01FB072550082A9AD /* LaunchScreen.storyboard */; };
 		848E11B51FB072550082A9AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11B41FB072550082A9AD /* main.m */; };
-		848E11BE1FB073330082A9AD /* UIControl+BridgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11BD1FB073330082A9AD /* UIControl+BridgeButton.m */; };
-		848E11C11FB0758F0082A9AD /* BridgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11C01FB0758F0082A9AD /* BridgeButton.m */; };
+		84A1D8491FB14FBE00F10C90 /* UIControl+BridgeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D8481FB14FBE00F10C90 /* UIControl+BridgeData.m */; };
+		84A1D8521FB1585500F10C90 /* UIGestureRecognizer+BridgeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A1D8511FB1585500F10C90 /* UIGestureRecognizer+BridgeData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		848E11B11FB072550082A9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848E11B31FB072550082A9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848E11B41FB072550082A9AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		848E11BC1FB073330082A9AD /* UIControl+BridgeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+BridgeButton.h"; sourceTree = "<group>"; };
-		848E11BD1FB073330082A9AD /* UIControl+BridgeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BridgeButton.m"; sourceTree = "<group>"; };
-		848E11BF1FB0758F0082A9AD /* BridgeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeButton.h; sourceTree = "<group>"; };
-		848E11C01FB0758F0082A9AD /* BridgeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeButton.m; sourceTree = "<group>"; };
+		84A1D8471FB14FBE00F10C90 /* UIControl+BridgeData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+BridgeData.h"; sourceTree = "<group>"; };
+		84A1D8481FB14FBE00F10C90 /* UIControl+BridgeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BridgeData.m"; sourceTree = "<group>"; };
+		84A1D8501FB1585500F10C90 /* UIGestureRecognizer+BridgeData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+BridgeData.h"; sourceTree = "<group>"; };
+		84A1D8511FB1585500F10C90 /* UIGestureRecognizer+BridgeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+BridgeData.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		848E11A41FB072550082A9AD /* BridgeButton */ = {
 			isa = PBXGroup;
 			children = (
-				848E11BB1FB073000082A9AD /* Class */,
+				848E11BB1FB073000082A9AD /* BridgeClass */,
 				848E11A51FB072550082A9AD /* AppDelegate.h */,
 				848E11A61FB072550082A9AD /* AppDelegate.m */,
 				848E11A81FB072550082A9AD /* ViewController.h */,
@@ -78,15 +78,15 @@
 			path = BridgeButton;
 			sourceTree = "<group>";
 		};
-		848E11BB1FB073000082A9AD /* Class */ = {
+		848E11BB1FB073000082A9AD /* BridgeClass */ = {
 			isa = PBXGroup;
 			children = (
-				848E11BC1FB073330082A9AD /* UIControl+BridgeButton.h */,
-				848E11BD1FB073330082A9AD /* UIControl+BridgeButton.m */,
-				848E11BF1FB0758F0082A9AD /* BridgeButton.h */,
-				848E11C01FB0758F0082A9AD /* BridgeButton.m */,
+				84A1D8471FB14FBE00F10C90 /* UIControl+BridgeData.h */,
+				84A1D8481FB14FBE00F10C90 /* UIControl+BridgeData.m */,
+				84A1D8501FB1585500F10C90 /* UIGestureRecognizer+BridgeData.h */,
+				84A1D8511FB1585500F10C90 /* UIGestureRecognizer+BridgeData.m */,
 			);
-			path = Class;
+			path = BridgeClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848E11C11FB0758F0082A9AD /* BridgeButton.m in Sources */,
-				848E11BE1FB073330082A9AD /* UIControl+BridgeButton.m in Sources */,
+				84A1D8491FB14FBE00F10C90 /* UIControl+BridgeData.m in Sources */,
 				848E11AA1FB072550082A9AD /* ViewController.m in Sources */,
+				84A1D8521FB1585500F10C90 /* UIGestureRecognizer+BridgeData.m in Sources */,
 				848E11B51FB072550082A9AD /* main.m in Sources */,
 				848E11A71FB072550082A9AD /* AppDelegate.m in Sources */,
 			);

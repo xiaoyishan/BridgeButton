@@ -17,45 +17,85 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    BridgeButton *button = [BridgeButton buttonWithType:UIButtonTypeSystem];
+    // 源数据
+    NSDictionary *Dic = @{@"code":@"200",
+                          @"msg":@"<nil>",
+                          @"data":@{@"mydata":@"balabalabalabalabalabala"},
+                          };
+    
+    NSArray *Arr = @[@1,@2,@17];
+    ProductModel *model = [ProductModel new];
+    model.ProductID = 123;
+    model.ProductName = @"KU74JYFi3";
+    
+    
+    
+    
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     button.tag = 100;
-    button.frame = CGRectMake(100, 100, 200, 70);
+    button.frame = CGRectMake(200, 50, 100, 70);
     button.backgroundColor = [UIColor brownColor];
     [self.view addSubview:button];
     [button addTarget:self action:@selector(ClickButton:) forControlEvents:UIControlEventTouchUpInside];
-    NSDictionary *Dic = @{@"code":@"200",
-                         @"msg":@"<nil>",
-                         @"data":@{@"mydata":@"balabalabalabalabalabala"},
-                         };
-    [button setBridgeDic:Dic];
+    
+    button.BridgeDic = Dic;
+    button.BridgeArr = Arr;
+    button.BridgeModel = model;
     
     
-//    BridgeButton *button1 = [BridgeButton buttonWithType:UIButtonTypeSystem];
-//    button1.frame = CGRectMake(100, 200, 200, 70);
-//    button1.backgroundColor = [UIColor cyanColor];
-//    [self.view addSubview:button1];
-//    [button1 addTarget:self action:@selector(ClickButton:) forControlEvents:UIControlEventTouchUpInside];
-//    button1.BridgeDic = @{@"moudle":@"product"};
-//
-//    BridgeButton *button2 = [BridgeButton buttonWithType:UIButtonTypeSystem];
-//    button2.frame = CGRectMake(100, 300, 200, 70);
-//    button2.backgroundColor = [UIColor orangeColor];
-//    [self.view addSubview:button2];
-//    [button2 addTarget:self action:@selector(ClickButton:) forControlEvents:UIControlEventTouchUpInside];
-//    button2.Model = [ProductModel new];
-//    button2.Model.ProductID = 123;
-//    button2.Model.ProductName = @"KU74JYFi3";
+    
+    
+    
+    UIImageView *Photo = [[UIImageView alloc] initWithFrame:CGRectMake(0, 200, 300, 200)];
+    Photo.userInteractionEnabled = YES;
+    Photo.image = [UIImage imageNamed:@"logo"];
+    [self.view  addSubview:Photo];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(ClickImageView:)];
+    [Photo addGestureRecognizer:tap];
+    
+    tap.BridgeDic = Dic;
+    tap.BridgeArr = Arr;
+    tap.BridgeModel = model;
+    
+    
+    
 }
 
 
 
 
-- (void)ClickButton:(BridgeButton*)button {
+
+
+-(void)ClickImageView:(UITapGestureRecognizer*)Guesture{
+
+    NSLog(@"ImageDic:%@ ",Guesture.BridgeDic);
+    NSLog(@"ImageArray:%@ ",Guesture.BridgeArr);
+    
+    ProductModel *model = (ProductModel*)Guesture.BridgeModel;
+    NSLog(@"ImageModel:%@ ", model);
+    NSLog(@"ImageModel(ProductName):%@ ", model.ProductName);
+}
+
+
+- (void)ClickButton:(UIButton*)button {
    
     NSLog(@"%zd",button.tag);
     NSLog(@"Dic:%@ ",button.BridgeDic);
-    NSLog(@"Model:%@ ",button.Model);
+    NSLog(@"Array:%@ ",button.BridgeArr);
+
+    ProductModel *model = (ProductModel*)button.BridgeModel;
+    NSLog(@"Model:%@ ", model);
+    NSLog(@"Model(ProductName):%@ ", model.ProductName);
 }
 
 
+
+
+
+@end
+
+
+@implementation ProductModel
 @end
