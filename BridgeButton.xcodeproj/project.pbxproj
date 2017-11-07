@@ -13,7 +13,7 @@
 		848E11AF1FB072550082A9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848E11AE1FB072550082A9AD /* Assets.xcassets */; };
 		848E11B21FB072550082A9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848E11B01FB072550082A9AD /* LaunchScreen.storyboard */; };
 		848E11B51FB072550082A9AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11B41FB072550082A9AD /* main.m */; };
-		848E11BE1FB073330082A9AD /* UIButton+BridgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11BD1FB073330082A9AD /* UIButton+BridgeButton.m */; };
+		848E11BE1FB073330082A9AD /* UIControl+BridgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11BD1FB073330082A9AD /* UIControl+BridgeButton.m */; };
 		848E11C11FB0758F0082A9AD /* BridgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11C01FB0758F0082A9AD /* BridgeButton.m */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +28,8 @@
 		848E11B11FB072550082A9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		848E11B31FB072550082A9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848E11B41FB072550082A9AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		848E11BC1FB073330082A9AD /* UIButton+BridgeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+BridgeButton.h"; sourceTree = "<group>"; };
-		848E11BD1FB073330082A9AD /* UIButton+BridgeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BridgeButton.m"; sourceTree = "<group>"; };
+		848E11BC1FB073330082A9AD /* UIControl+BridgeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+BridgeButton.h"; sourceTree = "<group>"; };
+		848E11BD1FB073330082A9AD /* UIControl+BridgeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BridgeButton.m"; sourceTree = "<group>"; };
 		848E11BF1FB0758F0082A9AD /* BridgeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeButton.h; sourceTree = "<group>"; };
 		848E11C01FB0758F0082A9AD /* BridgeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,8 +81,8 @@
 		848E11BB1FB073000082A9AD /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				848E11BC1FB073330082A9AD /* UIButton+BridgeButton.h */,
-				848E11BD1FB073330082A9AD /* UIButton+BridgeButton.m */,
+				848E11BC1FB073330082A9AD /* UIControl+BridgeButton.h */,
+				848E11BD1FB073330082A9AD /* UIControl+BridgeButton.m */,
 				848E11BF1FB0758F0082A9AD /* BridgeButton.h */,
 				848E11C01FB0758F0082A9AD /* BridgeButton.m */,
 			);
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				848E11C11FB0758F0082A9AD /* BridgeButton.m in Sources */,
-				848E11BE1FB073330082A9AD /* UIButton+BridgeButton.m in Sources */,
+				848E11BE1FB073330082A9AD /* UIControl+BridgeButton.m in Sources */,
 				848E11AA1FB072550082A9AD /* ViewController.m in Sources */,
 				848E11B51FB072550082A9AD /* main.m in Sources */,
 				848E11A71FB072550082A9AD /* AppDelegate.m in Sources */,

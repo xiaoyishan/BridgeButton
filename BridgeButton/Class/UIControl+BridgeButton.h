@@ -1,5 +1,5 @@
 //
-//  UIButton+BridgeButton.h
+//  UIControl+BridgeButton.h
 //  BridgeButton
 //
 //  Created by xiaSang on 2017/11/6.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "objc/runtime.h"
 
-@interface UIButton (BridgeButton)
+@interface UIControl (BridgeButton)
 
-// 放入缓存，根据内存地址给值 在button回收时释放
+@property (nonatomic,strong) NSDictionary *BridgeDic;
 
 @end

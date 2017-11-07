@@ -17,6 +17,6 @@
 
 
 @interface BridgeButton : UIButton
-@property (nonatomic,strong) NSDictionary *BridgeDic;
+//@property (nonatomic,strong) NSDictionary *BridgeDic;
 @property (nonatomic,strong) ProductModel *Model;
 @end

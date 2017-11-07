@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIButton+BridgeButton.h"
+#import "UIControl+BridgeButton.h"
 #import "BridgeButton.h"
 
 @interface ViewController : UIViewController
