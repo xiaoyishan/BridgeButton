@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8414DFFD1FB29CF1006397A7 /* UIResponder+BridgeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8414DFFC1FB29CF1006397A7 /* UIResponder+BridgeData.m */; };
 		848E11A71FB072550082A9AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11A61FB072550082A9AD /* AppDelegate.m */; };
 		848E11AA1FB072550082A9AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E11A91FB072550082A9AD /* ViewController.m */; };
 		848E11AD1FB072550082A9AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848E11AB1FB072550082A9AD /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8414DFFB1FB29CF1006397A7 /* UIResponder+BridgeData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+BridgeData.h"; sourceTree = "<group>"; };
+		8414DFFC1FB29CF1006397A7 /* UIResponder+BridgeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+BridgeData.m"; sourceTree = "<group>"; };
 		848E11A21FB072550082A9AD /* BridgeButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgeButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E11A51FB072550082A9AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		848E11A61FB072550082A9AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				84A1D8481FB14FBE00F10C90 /* UIControl+BridgeData.m */,
 				84A1D8501FB1585500F10C90 /* UIGestureRecognizer+BridgeData.h */,
 				84A1D8511FB1585500F10C90 /* UIGestureRecognizer+BridgeData.m */,
+				8414DFFB1FB29CF1006397A7 /* UIResponder+BridgeData.h */,
+				8414DFFC1FB29CF1006397A7 /* UIResponder+BridgeData.m */,
 			);
 			path = BridgeClass;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				84A1D8491FB14FBE00F10C90 /* UIControl+BridgeData.m in Sources */,
 				848E11AA1FB072550082A9AD /* ViewController.m in Sources */,
 				84A1D8521FB1585500F10C90 /* UIGestureRecognizer+BridgeData.m in Sources */,
+				8414DFFD1FB29CF1006397A7 /* UIResponder+BridgeData.m in Sources */,
 				848E11B51FB072550082A9AD /* main.m in Sources */,
 				848E11A71FB072550082A9AD /* AppDelegate.m in Sources */,
 			);
